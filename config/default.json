@@ -1,0 +1,5 @@
+{
+  "lookupdHTTPAddresses": ["127.17.0.1:4161", "127.17.0.1:4163"],
+  "topic": "testTopic",
+  "channel": "testChannel"
+}
