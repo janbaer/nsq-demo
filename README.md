@@ -1,4 +1,4 @@
-# NSDQ Demo
+# NSQ Demo
 
 This project contains a demo for howto use NSQ. It uses NSQD, NSLOOKUPD and NSQADMIN within Docker.
 As client we're using here NSQJS. But the demo contains an extension about howto create a writer.
@@ -13,7 +13,7 @@ instance will be used.
 
 - [https://nsq.io/](https://nsq.io/)
 - [NSQJS](https://github.com/dudleycarr/nsqjs)
-- [Using Message Queues with Microservices](https://xavierchow.github.io/2016/08/06/mq-with-microservice/()
+- [Using Message Queues with Microservices](https://xavierchow.github.io/2016/08/06/mq-with-microservice/)
 - [GopherCon 2014 Spray Some NSQ On It by Matt Reiferson](https://www.youtube.com/watch?time_continue=930&v=CL_SUzXIUuI)
 - [Lessons Learned Optimizing NSQ](https://speakerdeck.com/snakes/lessons-learned-optimizing-nsq)
 - [Scaling NSQ to 750 Billion Messages](https://segment.com/blog/scaling-nsq/)
