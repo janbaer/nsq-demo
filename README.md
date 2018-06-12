@@ -17,3 +17,8 @@ instance will be used.
 - [GopherCon 2014 Spray Some NSQ On It by Matt Reiferson](https://www.youtube.com/watch?time_continue=930&v=CL_SUzXIUuI)
 - [Lessons Learned Optimizing NSQ](https://speakerdeck.com/snakes/lessons-learned-optimizing-nsq)
 - [Scaling NSQ to 750 Billion Messages](https://segment.com/blog/scaling-nsq/)
+
+## Alternatives
+
+- RabitMQ
+- [IronMQ](https://www.iron.io//mq)
