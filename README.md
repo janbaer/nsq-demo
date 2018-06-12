@@ -16,4 +16,4 @@ instance will be used.
 - [Using Message Queues with Microservices](https://xavierchow.github.io/2016/08/06/mq-with-microservice/()
 - [GopherCon 2014 Spray Some NSQ On It by Matt Reiferson](https://www.youtube.com/watch?time_continue=930&v=CL_SUzXIUuI)
 - [Lessons Learned Optimizing NSQ](https://speakerdeck.com/snakes/lessons-learned-optimizing-nsq)
-- [Scaling NSQ to 750 Billion Messages](https://getpocket.com/a/read/1290554817)
+- [Scaling NSQ to 750 Billion Messages](https://segment.com/blog/scaling-nsq/)
