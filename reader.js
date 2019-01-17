@@ -1,14 +1,16 @@
 const config = require('config');
 const nsq = require('nsqjs')
 
-let channel = config.channel;
-if (process.argv.length > 2) {
-  channel = process.argv[2];
+if (process.argv.length !== 4) {
+  console.log('Please pass topic and channel as arguments');
+  process.exit(1);
 }
+const topic = process.argv[2];
+const channel = process.argv[3];
 
-console.log(`Subscribing to topic ${config.topic} on channel ${channel}...`);
+console.log(`Subscribing to topic ${topic} on channel ${channel}...`);
 
-const reader = new nsq.Reader(config.topic, channel, {
+const reader = new nsq.Reader(topic, channel, {
   lookupdHTTPAddresses: config.lookupdHTTPAddresses
 })
 

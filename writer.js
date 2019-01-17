@@ -3,14 +3,17 @@ const nsq = require('nsqjs')
 
 const { createWriter } = require('./helpers/connector.js');
 
-let message = 'Hello NSQ';
-if (process.argv.length > 2) {
-  message = process.argv[2];
+if (process.argv.length !== 4) {
+  console.log('Please pass topic and message as arguments');
+  process.exit(1);
 }
 
-function publish(writer, message) {
+const topic = process.argv[2];
+const message = process.argv[3];
+
+function publish(writer, topic, message) {
   return new Promise((resolve, reject) => {
-    writer.publish(config.topic, message,  err => {
+    writer.publish(topic, message,  err => {
       if (err) {
         return console.error(err.message);
       }
@@ -24,7 +27,7 @@ function publish(writer, message) {
   try {
     const writer = await createWriter(config.lookupdHTTPAddresses);
     if (writer) {
-      await publish(writer, message);
+      await publish(writer, topic, message);
     }
   } catch(error) {
     console.log('Error while connecting to any configured NSQD servers', error);
