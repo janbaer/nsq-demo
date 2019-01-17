@@ -17,8 +17,16 @@ instance will be used.
 - [GopherCon 2014 Spray Some NSQ On It by Matt Reiferson](https://www.youtube.com/watch?time_continue=930&v=CL_SUzXIUuI)
 - [Lessons Learned Optimizing NSQ](https://speakerdeck.com/snakes/lessons-learned-optimizing-nsq)
 - [Scaling NSQ to 750 Billion Messages](https://segment.com/blog/scaling-nsq/)
+- [NSQ service discovery with DNS records](https://medium.com/@harlow/nsq-service-discovery-with-dns-records-de9d759db150)
 
 ## Alternatives
 
 - RabitMQ
 - [IronMQ](https://www.iron.io//mq)
+
+## Usage of demo
+
+- start `./start-docker-nsq.sh`
+- create a message with `./node_writer.sh topic1 'Hello world'`
+- receive message with `./node_reader.sh topic1 channel1`
+- stop containers with `./stop-docker-nsq.sh`
